@@ -1,0 +1,233 @@
+body {
+    background-color: black;
+    position: relative;
+}
+
+#game-space {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid darkblue;
+    position: relative;
+    background: url(../images/fon.jpg);
+    overflow: hidden;
+
+}
+
+#game-space img {
+    width: 100%;
+    height: 100%;
+}
+
+#scores {
+    font-size: 34px;
+    color: white;
+    font-family: Marker Felt, fantasy;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#fuel {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    top: 5px;
+    right: 110px;
+    display: block;
+}
+
+
+#lifes {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#lifes span {
+    width: 30px;
+    height: 40px;
+    background:url(../images/star_ship.png);
+    background-size: cover;
+    display: block;
+    float: left;
+
+}
+
+/*стартовый блок*/
+#game-start {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid darkblue;
+    position: relative;
+    background: url(../images/end.jpg);
+    display: block;
+}
+
+
+#start-button {
+    background: #000;
+    height: 99px;
+    width: 206px;
+    margin: 0;
+    padding: 0;
+    color: #ddf;
+    background-color: #1120;
+    text-align: center;
+    padding-top: 0;
+    position: absolute;
+    top: 377px;
+    left: 317px;
+    font-size: 48px;
+    box-shadow: 0 0 40px 40px #000000ab inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    border-radius: 17px;
+    text-shadow: 0 3px 0 #171616, 1px 5px 20px #6b7bda;
+    font: 400 40px Marker Felt, fantasy;
+    letter-spacing: 4px;
+}
+#start-button:hover {
+  box-shadow: 0 0 20px 0 #000 inset, 0 0 20px 4px #fff;
+}
+
+   #star-ship {
+    position: absolute;
+    display: block;
+    left: 265px;
+    bottom: 10px;
+    width: 70px; /*width of your image*/
+    height: 80px; /*height of your image*/
+    background:url(../images/star_ship.png);
+    background-size: cover;
+    margin:auto; /* If you want no margin */
+    padding:0 auto; /*if your want to padding */
+
+}
+
+.bullet {
+  bottom: 95px;
+  position: absolute;
+  height: 34px;
+  width: 7px;
+  background:url(../images/bullet_2.png);
+  background-size: cover;
+    
+}
+
+
+.enemy {
+    background: url(../images/ast.png);
+    background-size: cover;
+    height: 40px;
+    width: 45px;
+    border-radius: 50px;
+    display: block;
+    top: -50px;
+    position: absolute;
+    /*margin: 10px 300px;*/
+    transition: all 1s;
+}
+
+
+.expl {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    background: url(../images/expl.gif);
+    background-size: cover;
+   /* transition: all 1s;*/
+}
+
+
+
+
+
+.planets {
+    height: 60px;
+    width: 60px;
+   /* margin: 10px 100px;*/
+    background: url(../images/planet.png);
+    background-size: cover;
+    border-radius: 50px;
+    display: block;
+    top: -50px;
+    position: absolute;
+    /*margin: 10px 300px;*/
+    transition: all 1s;
+}
+
+.mars {
+    height: 50px;
+    width: 50px;
+   /* margin: 10px 100px;*/
+    background: url(../images/planet.png);
+    background-size: cover;
+    display: block;
+    top: -50px;
+    position: absolute;
+    /*margin: 10px 300px;*/
+    transition: all 1s;
+}
+
+.saturn {
+   height: 60px;
+    width: 70px;
+   /* margin: 10px 100px;*/
+    background: url(../images/saturn.png);
+    background-size: cover;
+    display: block;
+    top: -50px;
+    position: absolute;
+    /*margin: 10px 300px;*/
+    transition: all 1s;
+}
+
+.bonus {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    background: url(../images/bonus.gif);
+    background-size: cover;
+   /* transition: all 1s;*/
+
+}
+
+.stars {
+    height: 40px;
+    width: 40px;
+    /*margin: 10px 200px;*/
+    background: url(../images/star.png); 
+    background-size: cover;
+    transition: all 1s;
+}
+
+
+ #konec_igra {
+    width: 600px;
+    height: 600px;
+    border: 2px solid darkblue;
+    position: relative;
+    margin: 0 auto;
+    background: url(../images/end.jpg);
+    color: azure;
+    text-align: center;
+    font-size: 40px;
+    /*display: block;*/
+}
+
+#konec_igra img {
+    width: 100%;
+    height: 100%;
+}
+
+  #knopka_igrat_eshe {
+    position: absolute;
+    display: block;
+    background: #228B22;
+    margin: 20px 175px;
+    font-size: 40px; 
+  }
+
